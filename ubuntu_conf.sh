@@ -53,7 +53,7 @@ apt-get update > /dev/null && apt-get -y upgrade \
 	&& echo "Upgrade Successfull !!!"  || exit $ERROR
 apt-get install -y \
 	zsh git vim tmux curl net-tools \
-	aptitude gdebi guake htop apt-file \
+	aptitude gdebi guake htop apt-file pydf \
 	chromium-browser virtualbox smplayer \
 	fcitx-libpinyin fcitx-pinyin \
 	shellcheck libappindicator3-1 > /dev/null \
