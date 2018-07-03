@@ -178,4 +178,4 @@ do
 	cp -rL $var /home/hyb
 done
 [ $? -eq 0 ] && echo "copy essential file to hyb successful !!!"
-chown -R hyb:hyb /home/hyb
+chown -R hyb:hyb /home/hyb 
