@@ -11,7 +11,7 @@
 DISK=sda
 
 # 1:内核参数优化
-cat >> /etc/sys.conf << EOF
+cat >> /etc/sysctl.conf << EOF
 net.ipv4.ip_forward = 1
 net.core.somaxconn = 65535
 net.core.netdev_max_backlog = 65535
@@ -29,6 +29,7 @@ net.ipv4.tcp_keepalive_probes = 3
 kernel.shmmax = 4294967295
 vm.swappiness = 0
 EOF
+sysctl -p
 
 # 2:资源限制优化
 cat >> /etc/security/limit.conf << EOF
